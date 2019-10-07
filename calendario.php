@@ -67,4 +67,16 @@ function mes($n){
 echo mes(1)['nombre']."<br>";
 echo mes(1)['dia']."<br>";
 echo mes(1)['estacion']."<br>";
+
+echo mes(4)['nombre']."<br>";
+echo mes(4)['dia']."<br>";
+echo mes(4)['estacion']."<br>";
+
+echo mes(7)['nombre']."<br>";
+echo mes(7)['dia']."<br>";
+echo mes(7)['estacion']."<br>";
+
+echo mes(10)['nombre']."<br>";
+echo mes(10)['dia']."<br>";
+echo mes(10)['estacion']."<br>";
 ?>
