@@ -1,17 +1,30 @@
 <?php
-
-function tipo($a, $b, $c) {
-	$r='rectangulo';
-		if ($a>90 || $b>90 || $c>90) {
-			$r='obtusangulo';
-			}
-		
-		if($a<90 and $b<90 and $c<90){
-			$r='acutangulo';
+function tipo($a,$b,$c,$d,$e,$f) {
+	echo lados($a,$b,$c);
+	echo angulo($d,$e,$f)."<br>";
+}
+function lados($a, $b, $c) {
+	$r='triangulo escaleno';
+		if ($a==$b || $a==$c) {
+		$r='triangulo isosceles';
+		}
+		if($b==$c and $a==$c){
+			$r='triangulo equilatero';
 	}
 	return $r;
 }
-echo tipo(30,90,60)."<br>";
-echo tipo(60,60,60)."<br>";
-echo tipo(30,30,120)."<br>";
+
+function angulo($d, $e, $f) {
+	$s=' y rectangulo';
+		if ($d>90 || $e>90 || $f>90) {
+			$s=' y obtusangulo';
+			}
+		
+		if($d<90 and $e<90 and $f<90){
+			$s=' y acutangulo';
+	}
+	return $s;
+}
+echo tipo(1,1,2,90,30,60)."<br>";
+
 ?>
