@@ -2,12 +2,10 @@
 
 function tipo($a, $b, $c) {
 	$r='rectangulo';
-		if ($a>90 || $b>90) {
+		if ($a>90 || $b>90 || $c>90) {
 			$r='obtusangulo';
 			}
-			elseif ($c>90) {
-				$r='obtusangulo';
-			}
+		
 		if($a<90 and $b<90 and $c<90){
 			$r='acutangulo';
 	}
@@ -15,5 +13,5 @@ function tipo($a, $b, $c) {
 }
 echo tipo(30,90,60)."<br>";
 echo tipo(60,60,60)."<br>";
-echo tipo(130,30,20)."<br>";
+echo tipo(30,30,120)."<br>";
 ?>
