@@ -3,8 +3,9 @@
 function tipo($a, $b, $c) {
 	$r='escaleno';
 		if ($a==$b || $a==$c) {
-			$r='isosceles';
-		if($b==$c and $a==$c)
+		$r='isosceles';
+		}
+		if($b==$c and $a==$c){
 			$r='equilatero';
 	}
 	return $r;
