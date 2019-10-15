@@ -11,34 +11,39 @@ function lados($a, $b, $c) {
 	return $r;
 }
 
-function angulo($a, $b, $c) {
+function angulo($A, $B, $C) {
 	$s=' y rectangulo';
-		if ($a>90 || $b>90 || $c>90) {
+		if ($A>90 || $B>90 || $C>90) {
 			$s=' y obtusangulo';
 			}
 		
-		if($a<90 and $b<90 and $c<90){
+		if($A<90 and $B<90 and $C<90){
 			$s=' y acutangulo';
 	}
 	return $s;
 }
-$a=[
-	'lados' => [5,5,6],
-	'angulo' => [45,40,50],
-	];
-	
-function tipo($a) {
-	return lados(
-		$a['lados'][0],
-		$a['lados'][1],
-		$a['lados'][2],
-		).
-	 angulo(
-		$a['angulo'][0],
-		$a['angulo'][1],
-		$a['angulo'][2],
-		);
-}
-echo tipo($a)."<br>";
 
+
+function triangulo($l) {
+	$a=$l[0];
+	$b=$l[1];
+	$c=$l[2];
+	
+	$x=($a**2-$b**2+$c**2)/(2*$c);
+	$h=sqrt($a**2-$x**2);
+	$A=atan($h/($c-$x))*(360/(2*3.14));
+	$B=atan($h/$x)*(360/(2*3.14));
+	$C=180-($A+$B);
+	
+
+return [
+	'angulos'=>[$A,$B,$C],
+	'tipo_lados'=>lados($a,$b,$c),
+	'tipo_angulos'=>angulo($A,$B,$C)
+	];
+}
+
+echo '<pre>';
+print_R( triangulo([5,5,8]))."<br>";
+echo '</pre>';
 ?>
