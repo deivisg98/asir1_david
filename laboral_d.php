@@ -92,8 +92,8 @@ for($i=1;$i<290;$i++){
 	}
 }
 
-echo count($x).' dias tenemos de HW'."<br>";
-echo count($y).' dias tenemos de LMS';
+echo count($x).' horas tenemos de HW'."<br>";
+echo (count($y)*2).' horas tenemos de LMS';
 
 foreach($x as $z){
 	echo '<tr>'."<br>";
