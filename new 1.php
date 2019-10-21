@@ -1,10 +1,10 @@
 <?php
+
 $a=[
-'Mon',
-'Tue',
-'Wed'
+1,2,3,4
 ];
 
 echo count($a);
+
 
 ?>
