@@ -2,7 +2,7 @@
 
 function tipo($a, $b, $c) {
 	$r='escaleno';
-		if ($a==$b || $a==$c) {
+		if ($a==$b || $a==$c || $b==$c) {
 		$r='isosceles';
 		}
 		if($b==$c and $a==$c){
@@ -10,6 +10,7 @@ function tipo($a, $b, $c) {
 	}
 	return $r;
 }
+echo tipo(1,2,2)."<br>";
 echo tipo(1,1,1)."<br>";
 echo tipo(2,1,2)."<br>";
 echo tipo(1,2,3)."<br>";
