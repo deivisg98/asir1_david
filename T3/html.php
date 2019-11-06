@@ -10,7 +10,7 @@
 <h4>¡Hijo de Putifar!</h4>
 <h5>Puedo decir que odio la oficina de correos. ¡A ella y a mis padres!</h5>
 <h6>Con él es como si no llevara nada. Llevara nadaa</h6>
-<center><p style="font-size:40; color:blue"><b>Si quieres conocer la vida de Ned Flanders envia los siguientes datos</b></p></center>
+<center><font size=40; color=blue><p><b>Si quieres conocer la vida de Ned Flanders envia los siguientes datos</b></p></font></center>
 <form action="flanders.php" method="post">
 	Nombre: <input type="text" name="Nombre"> </br>
 	Apellidos: <input type="text" name="Apellidos"> </br>
@@ -24,7 +24,7 @@
 	<input type="submit" value="Enviar">
 </form>
 
-<table style="width:50%" border="1">
+<table width="50%" border="1">
   <tr>
     <th>Autonomia</th>
     <th>Provincia</th>
