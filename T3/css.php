@@ -4,12 +4,11 @@
 </head>
 <body style="background-color:orange">
 <img src="ned.png" style="width:10%">
-<h1>Hola</h1>
-<h2 style="text-decoration:underline">Holita</h2>
-<h3>Vecinito</h3>
+<h1>Frases de Ned Flanders:</h1>
+<h2 style="text-decoration:underline">Hola Holita Vecinito</h2>
+<h3>Con él es como si no llevara nada. Llevara nadaa</h3>
 <h4>¡Hijo de Putifar!</h4>
 <h5>Puedo decir que odio la oficina de correos. ¡A ella y a mis padres!</h5>
-<h6>Con él es como si no llevara nada. Llevara nadaa</h6>
 <p style="font-size:40; color:blue; text-align:center; font-weight:bold">Si quieres conocer la vida de Ned Flanders envia los siguientes datos</p>
 <form action="flanders.php" method="post">
 	Nombre: <input type="text" name="Nombre"> </br>
