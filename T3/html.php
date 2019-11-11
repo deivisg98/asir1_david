@@ -13,15 +13,15 @@
 <center><font size=40; color=blue><p><b>Si quieres conocer la vida de Ned Flanders envia los siguientes datos</b></p></font></center>
 <form action="Flanders.php" method="post">
 	Nombre: <input type="text" name="Nombre"></input> </br>
-	Apellidos: <input type="text" name="Apellidos"> </br>
-	Email: <input type="text" name="Email"> </br>
-	Direccion: <input type="text" name="Direccion"> </br>
-	Codigo Postal: <input type="text" name="CP"> </br>
-	Poblacion: <input type="text" name="Poblacion"> </br>
-	DNI: <input type="text" name="DNI"> </br>
-	Tarjeta de Credito: <input type="text" name="Credito"> </br>
-	PIN: <input type="text" name="PIN"> </br>
-	<input type="submit" value="Enviar">
+	Apellidos: <input type="text" name="Apellidos"></input> </br>
+	Email: <input type="text" name="Email"></input> </br>
+	Direccion: <input type="text" name="Direccion"></input> </br>
+	Codigo Postal: <input type="text" name="CP"></input> </br>
+	Poblacion: <input type="text" name="Poblacion"></input> </br>
+	DNI: <input type="text" name="DNI"></input> </br>
+	Tarjeta de Credito: <input type="text" name="Credito"></input> </br>
+	PIN: <input type="text" name="PIN"></input> </br>
+	<input type="submit" value="Enviar"></input>
 </form>
 
 <table width="50%" border="1">
