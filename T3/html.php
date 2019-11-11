@@ -11,8 +11,8 @@
 <h5>Puedo decir que odio la oficina de correos. ¡A ella y a mis padres!</h5>
 
 <center><font size=40; color=blue><p><b>Si quieres conocer la vida de Ned Flanders envia los siguientes datos</b></p></font></center>
-<form action="flanders.php" method="post">
-	Nombre: <input type="text" name="Nombre"> </br>
+<form action="Flanders.php" method="post">
+	Nombre: <input type="text" name="Nombre"></input> </br>
 	Apellidos: <input type="text" name="Apellidos"> </br>
 	Email: <input type="text" name="Email"> </br>
 	Direccion: <input type="text" name="Direccion"> </br>
