@@ -11,15 +11,15 @@
 <h5>Puedo decir que odio la oficina de correos. ¡A ella y a mis padres!</h5>
 <p style="font-size:40; color:blue; text-align:center; font-weight:bold">Si quieres conocer la vida de Ned Flanders envia los siguientes datos</p>
 <form action="Flanders.php" method="post">
-	Nombre: <input type="text" name="Nombre"> </br>
-	Apellidos: <input type="text" name="Apellidos"> </br>
-	Email: <input type="text" name="Email"> </br>
-	Direccion: <input type="text" name="Direccion"> </br>
-	Codigo Postal: <input type="text" name="CP"> </br>
-	Poblacion: <input type="text" name="Poblacion"> </br>
-	DNI: <input type="text" name="DNI"> </br>
-	Tarjeta de Credito: <input type="text" name="Credito"> </br>
-	PIN: <input type="text" name="PIN"> </br>
+	Nombre: <input type="text" name="Nombre"> <br/>
+	Apellidos: <input type="text" name="Apellidos"> <br/>
+	Email: <input type="text" name="Email"> <br/>
+	Direccion: <input type="text" name="Direccion"> <br/>
+	Codigo Postal: <input type="text" name="CP"> <br/>
+	Poblacion: <input type="text" name="Poblacion"> <br/>
+	DNI: <input type="text" name="DNI"> <br/>
+	Tarjeta de Credito: <input type="text" name="Credito"> <br/>
+	PIN: <input type="text" name="PIN"> <br/>
 	<input type="submit" value="Enviar">
 </form>
 
@@ -44,6 +44,7 @@
     <td style="border:1px solid black"></td>
     <td style="border:1px solid black">Lugo</td>
   </tr>
+  <tr>
 	<td style="border:1px solid black"></td>
 	<td style="border:1px solid black">Pontevedra</td>
   </tr>
