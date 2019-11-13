@@ -4,11 +4,11 @@
 <style>
 #cuerpo {
 	background-color: orange;
-	};
+	}
 
 #imagen1 {
 	width: 10%;
-};
+}
 
 .letras {
 	font-size: 15;
