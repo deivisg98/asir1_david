@@ -24,12 +24,9 @@ $vacaciones=[
 for($i=1;$i<290;$i++){
 	$a=date('Y-m-d',($i-1)*24*60*60+strtotime('2019-09-13'));
 	if(
-		!in_array($a,$fiesta)
+		!in_array($a,$vacaciones)
 		and
-		date('D',strtotime($a))!='Thu'
-		and
-		date('D',strtotime($a))!='Fri'
-		and
+
 		date('D',strtotime($a))!='Sat'
 		and
 		date('D',strtotime($a))!='Sun'
@@ -47,7 +44,7 @@ for($i=1;$i<290;$i++){
 for($i=1;$i<290;$i++){
 	$a=date('Y-m-d',($i-1)*24*60*60+strtotime('2019-09-13'));
 	if(
-		!in_array($a,$fiesta)
+		!in_array($a,$vacaciones)
 		and
 		date('D',strtotime($a))!='Sat'
 		and
