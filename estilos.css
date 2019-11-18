@@ -1,0 +1,35 @@
+#cuerpo {
+	background-color: orange;
+	}
+
+#imagen1 {
+	width: 10%;
+}
+
+.letras {
+	font-size: 15;
+}
+
+#sub {
+	text-decoration: underline;
+}
+
+#letritas {
+	font-size: 40;
+	color: blue;
+	text-align: center;
+	font-weight: bold;
+}
+
+#tabla {
+	width: 50$;
+	border: 1px solid black;
+}
+
+.celda {
+	border: 1px solid black;
+}
+
+#gif {
+	width: 40%
+}
