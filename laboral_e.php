@@ -17,22 +17,17 @@ $d =[
 		'2020-04-17'
 	]
 ];
+
 $vacaciones=[
 	'2020-05-01',
 	'2020-06-25'
 	];
- 
-
-
   
 // Use strtotime function 
-function vacaciones($d,$vacaciones){
-foreach ($d as $p){
-	
-$V1 = strtotime($p0); 
-$V2 = strtotime($p1); 
-  
-  
+function vacaciones ($d, $vacaciones){
+foreach ($d as $d){
+	$V1 = strtotime($d[0][0]); 
+	$V2 = strtotime($d[0][1]); 
 // Use for loop to store dates into array 
 // 86400 sec = 24 hrs = 60*60*24 
 for ($currentDate = $V1; $currentDate <= $V2;  

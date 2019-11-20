@@ -45,7 +45,7 @@ $fiesta=[
 ];
 
 for($i=1;$i<290;$i++){
-	$a=date('Y-m-d',($i-1)*24*60*60+strtotime('2019-09-13'));
+	$a=date('Y-m-d',($i-1)*86400+strtotime('2019-09-13'));
 	if(
 		!in_array($a,$fiesta)
 		and
@@ -60,15 +60,15 @@ for($i=1;$i<290;$i++){
 		$x[]=[
 		'n'=>$i,
 		's'=>round($i/7)+1,
-		'fecha'=>date('Y-m-d',strtotime('2019-09-13')+($i-1)*24*60*60),
-		'D'=>date('D',strtotime('2019-09-13')+($i-1)*24*60*60),
+		'fecha'=>date('Y-m-d',strtotime('2019-09-13')+($i-1)*86400),
+		'D'=>date('D',strtotime('2019-09-13')+($i-1)*86400),
 		];
 
 	}
 }
 
 for($i=1;$i<290;$i++){
-	$a=date('Y-m-d',($i-1)*24*60*60+strtotime('2019-09-13'));
+	$a=date('Y-m-d',($i-1)*86400+strtotime('2019-09-13'));
 	if(
 		!in_array($a,$fiesta)
 		and
@@ -85,8 +85,8 @@ for($i=1;$i<290;$i++){
 		$y[]=[
 		'n'=>$i,
 		's'=>round($i/7)+1,
-		'fecha'=>date('Y-m-d',strtotime('2019-09-13')+($i-1)*24*60*60),
-		'D'=>date('D',strtotime('2019-09-13')+($i-1)*24*60*60),
+		'fecha'=>date('Y-m-d',strtotime('2019-09-13')+($i-1)*86400),
+		'D'=>date('D',strtotime('2019-09-13')+($i-1)*86400),
 		];
 
 	}

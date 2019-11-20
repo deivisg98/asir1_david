@@ -4,8 +4,8 @@ for($i=1;$i<366;$i++){
 	$x[]=[
 	'n'=>$i,
 	's'=>round($i/7)+1,
-	'fecha'=>date('Y-m-d',strtotime('2019-01-01')+($i-1)*24*60*60),
-	'D'=>date('D',strtotime('2019-01-01')+($i-1)*24*60*60),
+	'fecha'=>date('Y-m-d',strtotime('2019-01-01')+($i-1)*86400),
+	'D'=>date('D',strtotime('2019-01-01')+($i-1)*86400),
 	];
 }
 foreach($x as $z){
