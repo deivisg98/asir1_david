@@ -2992,6 +2992,7 @@ if (isset ($_POST['micro2'])){
 
 ?>
 
+Introduce los micros a comparar:
 <form method="post">
  
 
@@ -2999,7 +3000,7 @@ if (isset ($_POST['micro2'])){
 <input name="micro2"><br>
  
 
-<button>COMPARAR</button>
+<button>Compara</button>
  
 
 </form>
