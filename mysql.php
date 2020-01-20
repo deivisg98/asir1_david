@@ -4,6 +4,7 @@ $conn->query("SET NAMES utf8;");
 $provincias=$conn->query("
 	SELECT * FROM provincias;
 ")->fetch_all(MYSQLI_ASSOC);
+
 if(0){
 	echo '<pre>';
 	print_r($provincias);
@@ -286,9 +287,9 @@ if(0){ // 51
 		if($p['autonomia']=='Galicia'){
 		if($p['poblacion']>1e6){
 		echo $p['provincia'].' es grande'.'<br>';}
-		elseif($p['poblacion']>5e5){
+			elseif($p['poblacion']>5e5){
 		echo $p['provincia'].' es mediana'.'<br>';}
-		else echo $p['provincia'].' es pequeña'.'<br>';
+			else echo $p['provincia'].' es pequeña'.'<br>';
 		}
 	}
 }
@@ -303,7 +304,7 @@ if(0){ // 10
 	}
 }
 
-if(1){	// 11
+if(0){	// 11
 	foreach($provincias as $p){
 		$a=$p['autonomia'];
 		$as[$a]=iconv_strlen($a);
@@ -313,4 +314,106 @@ if(1){	// 11
 		echo $autonomia.' '.$longitud.'<br/>';
 }
 
+if(0){ // 15
+	foreach($provincias as $p)
+		if(strstr($p['autonomia'], 'Can'))
+			$aa[$p['autonomia']]=$p['autonomia'];
+			
+		sort($aa);
+		foreach($aa as $a)
+			echo $a.'<br>';
+}
+	
+if(0){ // 16
+	foreach($provincias as $p)
+		if($p['poblacion']>1e6)
+			$aa[$p['autonomia']]=$p['autonomia'];
+		
+		sort($aa);
+			foreach($aa as $a)
+			echo $a.'<br>';
+}
+
+if(0){ // 21
+	$s=0;
+	foreach($provincias as $p)
+		$s+=$p['poblacion'];
+		echo $s;
+}
+
+if(0){ // 23
+		echo count($provincias);
+}
+
+if(0){ // 25
+	foreach($provincias as $p)
+		if(strstr($p['autonomia'], $p['provincia']))
+			echo $p['autonomia'].'<br>';
+}
+
+if(0){ // 12
+	foreach($provincias as $p)
+		if(strstr($p['autonomia'],' '))
+			$aa[$p['autonomia']]=$p['autonomia'];
+		rsort($aa);
+		foreach($aa as $a)
+			echo $a.'<br>';
+}
+
+if(0){ // 13
+	foreach($provincias as $p)
+		if(!strstr($p['autonomia'],' '))
+			$aa[$p['autonomia']]=$p['autonomia'];
+		rsort($aa);
+		foreach($aa as $a)
+			echo $a.'<br>';
+}
+
+if(0){ // 14
+	foreach($provincias as $p)
+		if(strstr($p['provincia'],' '))
+			$aa[$p['autonomia']]=$p['autonomia'];
+		sort($aa);
+		foreach($aa as $a)
+			echo $a.'<br>';
+}
+
+if(0){ // 22
+	$h=0;
+	foreach($provincias as $p)
+		$h+=$p['superficie'];
+		echo $h;
+}
+
+if(0){ // 24 
+	foreach($provincias as $p)
+		$pr[$p['provincia']]=$p['provincia'];
+	sort($pr);
+	echo $pr[0].'<br>';
+}
+	
+if(0){ // 26
+	foreach($provincias as $p)
+		if(strlen($p['provincia'])>strlen($p['autonomia']))
+			echo $p['provincia'].'<br>';
+}
+
+if(0){ // 27
+	foreach($provincias as $p)
+			$pr[$p['autonomia']]=$p['autonomia'];
+		sort($pr);
+		echo count($pr);
+}
+
+if(0){ // 29
+	foreach($provincias as $p)
+		$as[]=iconv_strlen($p['autonomia']);
+	echo min($as);
+}
+
+if(1){ // 30
+	foreach($provincias as $p)
+		$as[]=iconv_strlen($p['provincia']);
+	echo max($as);
+}
 ?>
